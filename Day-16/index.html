@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 16</title>
+    <style>
+      /* by default overflow is visible  */
+      .parentDivHidden {
+        border: 2px solid black;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+      }
+      .parentDivAuto {
+        border: 2px solid black;
+        width: 200px;
+        height: 200px;
+        overflow: auto;
+      }
+      .parentDivScroll {
+        border: 2px solid black;
+        width: 200px;
+        height: 200px;
+        overflow: scroll;
+      }
+      .marginAuto {
+        font-size: 60px;
+        border: 2px solid black;
+        width: 80%;
+        height: 300px;
+        margin: auto;
+        text-align: center;
+        /* margin-left: 10%; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parentDivHidden">
+      Testing overflow Testing overflow Testing overflow Testing overflow
+      Testing overflow Testing overflow Testing overflow Testing overflow
+      Testing overflow Testing overflow Testing overflow Testing overflow
+      Testing overflow Testing overflow Testing overflow Testing overflow
+      Testing overflow Testing overflow Testing overflow Testing overflow
+      Testing overflow
+    </div>
+
+    <div class="parentDivAuto">
+      Testing overflow Testing overflow Testing overflow Testing overflow
+      Testing overflow Testing overflow Testing overflow Testing overflow
+      Testing overflow Testing overflow Testing overflow Testing overflow
+      Testing overflow Testing overflow Testing overflow Testing overflow
+      Testing overflow Testing overflow Testing overflow Testing overflow
+      Testing overflow
+    </div>
+
+    <div class="parentDivScroll">
+      Testing overflow Testing overflow Testing overflow Testing overflow
+      Testing overflow Testing overflow Testing overflow Testing overflow
+      Testing overflow Testing overflow Testing overflow Testing overflow
+      Testing overflow Testing overflow Testing overflow Testing overflow
+      Testing overflow Testing overflow Testing overflow Testing overflow
+      Testing overflow
+    </div>
+
+    <div class="marginAuto">Testing margin : auto</div>
+
+    <img
+      style="display: block; margin-left: auto; margin-right: auto; width: 60%"
+      src="./../images/inr.png"
+    />
+  </body>
+</html>
