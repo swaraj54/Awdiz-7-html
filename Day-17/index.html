@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parentDiv {
+        width: 100%;
+        border: 2px solid red;
+        display: flex;
+        justify-content: space-around;
+      }
+      .childrenDiv {
+        width: 23%;
+        height: 300px;
+        border: 2px solid black;
+      }
+
+      .secondChild {
+        width: 100%;
+        border: 2px solid blue;
+      }
+
+      @media screen and (max-width: 500px) {
+        .parentDiv {
+          flex-direction: column;
+        }
+
+        .childrenDiv {
+          background-color: aquamarine;
+          width: 90%;
+          margin: auto;
+          margin-bottom: 20px;
+        }
+        .parentDiv > div:nth-child(3),
+        .parentDiv > div:nth-child(4) {
+          /* background-color: red; */
+          display: none;
+        }
+        #test {
+          /* background-color: blue; */
+          display: flex;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parentDiv">
+      <div class="childrenDiv">1</div>
+      <div class="childrenDiv" id="test">
+        <div class="secondChild">2.1</div>
+        <div class="secondChild">2.2</div>
+        <div class="secondChild">2.3</div>
+        <div class="secondChild">2.4</div>
+      </div>
+      <div class="childrenDiv">3</div>
+      <div class="childrenDiv">4</div>
+    </div>
+  </body>
+</html>

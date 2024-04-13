@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+          Helvetica Neue, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .d-none {
+        display: none;
+      }
+      #parentDiv {
+        width: 90%;
+        margin: auto;
+        border: 2px solid black;
+        height: 3000px;
+      }
+      #navbar {
+        width: 100%;
+        border: 2px solid red;
+        height: 80px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+      }
+      #logo {
+        width: 15%;
+        /* border: 2px solid black; */
+        display: flex;
+        align-items: center;
+      }
+      #logo > img {
+        height: 45%;
+        width: 50%;
+      }
+      #navigations {
+        width: 25%;
+        border: 2px solid black;
+      }
+      #profile {
+        width: 20%;
+        border: 2px solid black;
+      }
+
+      #search,
+      #filter {
+        display: none;
+      }
+
+      /* 750, 950  */
+      @media screen and (max-width: 950px) {
+        #navigations {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 650px) {
+        #logo,
+        #profile {
+          display: none;
+        }
+        #search,
+        #filter {
+          display: block;
+          border: 2px solid black;
+        }
+        #search {
+          width: 88%;
+          display: flex;
+          align-items: center;
+        }
+        #filter {
+          width: 10%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parentDiv">
+      <div id="navbar">
+        <div id="logo">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/1200px-Airbnb_Logo_B%C3%A9lo.svg.png"
+            alt="Logo"
+          />
+        </div>
+        <div id="navigations">3</div>
+        <div id="profile">5</div>
+        <div id="search">
+          <div style="border: 1px solid grey; padding: 10px; width: 100%; border-radius: 25px;">
+            <i></i>
+            <div>
+                <h5>Anywhere</h5>
+                <p>Any week</p>
+            </div>
+          </div>
+        </div>
+        <div id="filter">
+            <div>
+                <i></i>
+            </div>
+        </div>
+      </div>
+      <div>Second Navbar</div>
+      <div>Filters</div>
+      <div>Sites</div>
+    </div>
+  </body>
+</html>
